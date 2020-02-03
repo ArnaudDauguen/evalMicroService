@@ -8,6 +8,7 @@ import com.ingesup.StudentCore.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import sun.java2d.opengl.OGLRenderQueue;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -88,4 +89,9 @@ public class StudentController {
         return studentService.deleteOneById(id);
     }
 
+    //GET one
+    @GetMapping("/grade/{gradeId}")
+    public @ResponseBody Iterable<Student> getAllByGradeId(@PathVariable int gradeId){
+        return studentService.getAllByGradeId(gradeId);
+    }
 }

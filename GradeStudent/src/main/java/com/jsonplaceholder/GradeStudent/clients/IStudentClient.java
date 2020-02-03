@@ -6,6 +6,8 @@ import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 @FeignClient(name="StudentClient")
 public interface IStudentClient {
@@ -13,4 +15,6 @@ public interface IStudentClient {
     @RequestLine("GET /{id}")
     Student getOneById(@Param("id") Integer id);
 
+    @RequestLine("GET /grade/{gradeId}")
+    List<Student> getAllByGradeId(@Param("gradeId") Integer gradeId);
 }

@@ -55,4 +55,8 @@ public class StudentService {
         }
         return rep;
     }
+
+    public Iterable<Student> getAllByGradeId(int gradeId) {
+        return studentRepository.getAllByGradeId(gradeId);
+    }
 }
