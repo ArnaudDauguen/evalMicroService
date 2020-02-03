@@ -24,8 +24,8 @@ public class GradeStudentController {
         return new ResponseEntity<>(gradeStudentService.getStudentsGrade(gradeId), HttpStatus.OK);
     }
 
-    @RequestMapping("/studentsGrade/")
-    ResponseEntity<List<StudentsGradeDTO>> getStudentsByGradeId() {
+    @RequestMapping("/gradeStudent/")
+    ResponseEntity<List<GradeStudentDTO>> getStudentsByGradeId() {
         return new ResponseEntity<>(gradeStudentService.getAllStudentsByGrades(), HttpStatus.OK);
     }
 }

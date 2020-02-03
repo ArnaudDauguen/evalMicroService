@@ -52,14 +52,14 @@ public class GradeStudentService {
         return new GradeStudentDTO(students, grade);
     }
 
-    public List<StudentsGradeDTO> getAllStudentsByGrades() {
+    public List<GradeStudentDTO> getAllStudentsByGrades() {
         List<Grade> grades = iGradeClient.getAll();
         int gradesLen = grades.size();
 
-        List<StudentsGradeDTO> rep = new ArrayList<StudentsGradeDTO>();
+        List<GradeStudentDTO> rep = new ArrayList<GradeStudentDTO>();
 
         for (int i = 0; i < gradesLen; i++) {
-            rep.add(new StudentsGradeDTO(grades.get(i), iStudentClient.getAllByGradeId(grades.get(i).getId())));
+            rep.add(new GradeStudentDTO(iStudentClient.getAllByGradeId(grades.get(i).getId()), grades.get(i)));
         }
         return rep;
     }
