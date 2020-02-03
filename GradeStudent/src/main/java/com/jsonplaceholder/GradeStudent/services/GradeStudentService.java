@@ -41,16 +41,6 @@ public class GradeStudentService {
             .logLevel(Logger.Level.FULL)
             .target(IStudentClient.class, "http://localhost:8082/students");
 
-    public GradeStudentDTO getGradeStudent(Integer Id){
-        log.info("Call to the student client - getOneById : " + Id);
-
-        Student student = iStudentClient.getOneById(Id);
-
-        log.info("Call to the grade client - getAll");
-        List<Grade> gradeStudents = iGradeClient.getAll();
-
-        return new GradeStudentDTO(student, gradeStudents);
-    }
 
     public GradeStudentDTO getStudentsGrade(Integer gradeId) {
         log.info("Call to the student client - getAllByGradeId : " + gradeId);
