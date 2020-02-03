@@ -9,7 +9,26 @@ import java.util.List;
 @AllArgsConstructor
 public class GradeStudentDTO { //DTO: Data Transfer Object
     private Student student;
-    private List<Grade> grade;
+    private List<Grade> grades;
+    private List<Student> students;
+    private List<List<Student>> studentsByGrade;
+    private Grade grade;
+
+    public GradeStudentDTO(Student student, List<Grade> gradeStudents) {
+        this.student = student;
+        this.grades = gradeStudents;
+    }
+
+    public GradeStudentDTO(List<Student> students, Grade grade) {
+        this.students = students;
+        this.grade = grade;
+    }
+
+    public GradeStudentDTO(List<Grade> grades, List<List<Student>> studentsByGrade) {
+        this.grades = grades;
+        this.studentsByGrade = studentsByGrade;
+    }
+
 
     public Student getStudent() {
         return student;
@@ -20,10 +39,10 @@ public class GradeStudentDTO { //DTO: Data Transfer Object
     }
 
     public List<Grade> getGrade() {
-        return grade;
+        return grades;
     }
 
-    public void setGrade(List<Grade> grade) {
-        this.grade = grade;
+    public void setGrade(List<Grade> grades) {
+        this.grades = grades;
     }
 }

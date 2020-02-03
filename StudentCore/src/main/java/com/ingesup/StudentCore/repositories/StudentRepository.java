@@ -34,10 +34,8 @@ public interface StudentRepository extends CrudRepository<Student, Integer> {
 
     @Transactional
     @Modifying(clearAutomatically = true)
-    @Query(value = "SELECT * FROM Student where  gradeId = : gradeId",
+    @Query(value = "SELECT * FROM student where  grade_id = :gradeId",
             nativeQuery = true)
-    List<Student> getAllByUserId(@Param(" gradeId") int  gradeId);
-
-
+    List<Student> getAllByGradeId(@Param("gradeId") int gradeId);
 
 }

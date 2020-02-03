@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="145220cd-1f30-4829-97e0-a96e77b92d5d" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="145220cd-1f30-4829-97e0-a96e77b92d5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/StudentCore.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/clients/IGradeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/clients/IGradeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/clients/IStudentClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/clients/IStudentClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/controllers/GradeStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/controllers/GradeStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/entities/GradeStudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/entities/GradeStudentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/services/GradeStudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/services/GradeStudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/controllers/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/repositories/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/services/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/services/StudentService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,9 +55,18 @@
   </component>
   <component name="ProjectId" id="1WLOtG0HxwXFCNPRqZf90qwOBPS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -52,18 +75,6 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ingesup.TodoCore.exceptions" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Gradle.TodoCore [bootRun]">
     <configuration name="StudentCore [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -121,6 +132,13 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="StudentCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="StudentCore.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ingesup.StudentCore.StudentCoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.TodoCore [bootRun]" />
@@ -128,6 +146,18 @@
         <item itemvalue="Gradle.StudentCore [init]" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -139,8 +169,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578925620365</updated>
+      <workItem from="1580727212011" duration="4022000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -154,5 +188,39 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1554" height="215" key="GridCell.Tab.0.bottom" timestamp="1580731050428">
+      <screen x="0" y="0" width="1600" height="855" />
+    </state>
+    <state width="1554" height="215" key="GridCell.Tab.0.bottom/0.0.1600.855@0.0.1600.855" timestamp="1580731050428" />
+    <state width="1554" height="215" key="GridCell.Tab.0.center" timestamp="1580731050427">
+      <screen x="0" y="0" width="1600" height="855" />
+    </state>
+    <state width="1554" height="215" key="GridCell.Tab.0.center/0.0.1600.855@0.0.1600.855" timestamp="1580731050427" />
+    <state width="1554" height="215" key="GridCell.Tab.0.left" timestamp="1580731050427">
+      <screen x="0" y="0" width="1600" height="855" />
+    </state>
+    <state width="1554" height="215" key="GridCell.Tab.0.left/0.0.1600.855@0.0.1600.855" timestamp="1580731050427" />
+    <state width="1554" height="215" key="GridCell.Tab.0.right" timestamp="1580731050428">
+      <screen x="0" y="0" width="1600" height="855" />
+    </state>
+    <state width="1554" height="215" key="GridCell.Tab.0.right/0.0.1600.855@0.0.1600.855" timestamp="1580731050428" />
+    <state width="1554" height="267" key="GridCell.Tab.1.bottom" timestamp="1580729571225">
+      <screen x="0" y="0" width="1600" height="855" />
+    </state>
+    <state width="1554" height="267" key="GridCell.Tab.1.bottom/0.0.1600.855@0.0.1600.855" timestamp="1580729571225" />
+    <state width="1554" height="267" key="GridCell.Tab.1.center" timestamp="1580729571224">
+      <screen x="0" y="0" width="1600" height="855" />
+    </state>
+    <state width="1554" height="267" key="GridCell.Tab.1.center/0.0.1600.855@0.0.1600.855" timestamp="1580729571224" />
+    <state width="1554" height="267" key="GridCell.Tab.1.left" timestamp="1580729571224">
+      <screen x="0" y="0" width="1600" height="855" />
+    </state>
+    <state width="1554" height="267" key="GridCell.Tab.1.left/0.0.1600.855@0.0.1600.855" timestamp="1580729571224" />
+    <state width="1554" height="267" key="GridCell.Tab.1.right" timestamp="1580729571225">
+      <screen x="0" y="0" width="1600" height="855" />
+    </state>
+    <state width="1554" height="267" key="GridCell.Tab.1.right/0.0.1600.855@0.0.1600.855" timestamp="1580729571225" />
   </component>
 </project>

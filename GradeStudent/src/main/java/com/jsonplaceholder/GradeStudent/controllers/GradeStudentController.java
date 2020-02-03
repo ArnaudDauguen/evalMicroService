@@ -16,9 +16,13 @@ public class GradeStudentController {
     @Autowired
     GradeStudentService gradeStudentService;
 
-    @RequestMapping("/gradeStudent/{Id}")
-    ResponseEntity<GradeStudentDTO> getUserTodos(@PathVariable Integer Id){
-        return new ResponseEntity<>(gradeStudentService.getGradeStudent(Id), HttpStatus.OK);
+    @RequestMapping("/gradeStudent/{gradeId}")
+    ResponseEntity<GradeStudentDTO> getGradeStudent(@PathVariable Integer gradeId){
+        return new ResponseEntity<>(gradeStudentService.getStudentsGrade(gradeId), HttpStatus.OK);
     }
 
+    @RequestMapping("/studentsGrade/")
+    ResponseEntity<GradeStudentDTO> getStudentsByGradeId() {
+        return new ResponseEntity<>(gradeStudentService.getAllStudentsByGrades(), HttpStatus.OK);
+    }
 }
