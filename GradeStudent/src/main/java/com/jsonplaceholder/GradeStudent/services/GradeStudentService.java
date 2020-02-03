@@ -5,6 +5,7 @@ import com.jsonplaceholder.GradeStudent.clients.IStudentClient;
 import com.jsonplaceholder.GradeStudent.entities.Grade;
 import com.jsonplaceholder.GradeStudent.entities.Student;
 import com.jsonplaceholder.GradeStudent.entities.GradeStudentDTO;
+import com.jsonplaceholder.GradeStudent.entities.StudentsGradeDTO;
 import feign.Feign;
 import feign.Logger;
 import feign.gson.GsonDecoder;
@@ -61,15 +62,15 @@ public class GradeStudentService {
         return new GradeStudentDTO(students, grade);
     }
 
-    public GradeStudentDTO getAllStudentsByGrades() {
+    public List<StudentsGradeDTO> getAllStudentsByGrades() {
         List<Grade> grades = iGradeClient.getAll();
-        List<List<Student>> studentsByGrade = new ArrayList<List<Student>>();
         int gradesLen = grades.size();
 
-        for (int i = 1; i <= gradesLen; i++) {
-            studentsByGrade.add(iStudentClient.getAllByGradeId(i));
-            //studentsByGrade.set(i-1, iStudentClient.getAllByGradeId(i));
+        List<StudentsGradeDTO> rep = new ArrayList<StudentsGradeDTO>();
+
+        for (int i = 0; i < gradesLen; i++) {
+            rep.add(new StudentsGradeDTO(grades.get(i), iStudentClient.getAllByGradeId(grades.get(i).getId())));
         }
-        return new GradeStudentDTO(grades, studentsByGrade);
+        return rep;
     }
 }

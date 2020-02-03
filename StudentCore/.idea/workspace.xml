@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="145220cd-1f30-4829-97e0-a96e77b92d5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/StudentCore.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/clients/IGradeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/clients/IGradeClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/clients/IStudentClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/clients/IStudentClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/controllers/GradeStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/controllers/GradeStudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/entities/GradeStudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/entities/GradeStudentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/entities/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/services/GradeStudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/services/GradeStudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/controllers/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/repositories/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/services/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ingesup/StudentCore/services/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
