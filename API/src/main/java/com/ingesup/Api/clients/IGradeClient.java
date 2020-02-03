@@ -12,6 +12,7 @@ import java.util.List;
 @FeignClient(name= "GradeClient")
 public interface IGradeClient {
 
+
     @RequestLine("GET /")
     List<Grade> getAll();
 

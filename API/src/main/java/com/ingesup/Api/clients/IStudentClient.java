@@ -6,6 +6,8 @@ import feign.Param;
 import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -19,7 +21,7 @@ public interface IStudentClient {
     @RequestLine("GET /{id}")
     Student getOneById(@Param("id") Integer id);
 
-    @RequestLine("GET /grade/{gradeId}")
-    List<Student> getAllByGradeId(@Param("gradeId") Integer gradeId);
+    @RequestMapping("PUT /{id}")
+    Student updateGradeId(@Param("id")Integer id, @RequestParam("gradeId") Integer gradeId);
 
 }
