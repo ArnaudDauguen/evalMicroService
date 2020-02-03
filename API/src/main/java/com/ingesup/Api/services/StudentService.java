@@ -26,11 +26,7 @@ public class StudentService {
 
 
     public List<Student> getAll(){
-        System.out.println("booo");
-        log.info("booo");
-        List<Student> lst = iStudentClient.getAll();
-        log.info(lst.toString());
-        return lst;
+        return iStudentClient.getAll();
     }
 
 

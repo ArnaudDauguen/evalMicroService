@@ -24,7 +24,7 @@ public class GradeStudentController {
 
     @Autowired
     GradeStudentService gradeStudentService;
-    StudentService studentService;
+    StudentService studentService = new StudentService();
 
 
 
@@ -56,9 +56,8 @@ public class GradeStudentController {
         return new ResponseEntity<>(response, HttpStatus.OK);
     }*/
 
-    @RequestMapping(value = "/students")
+    @GetMapping(value = "/students")
     ResponseEntity<List<Student>> getStudents(){
-        System.out.println("booo");
         return new ResponseEntity<>(studentService.getAll(), HttpStatus.OK);
     }
 /*
