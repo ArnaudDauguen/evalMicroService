@@ -26,27 +26,15 @@ public class GradeStudentService {
             .decoder(new GsonDecoder())
             .logger(new Slf4jLogger(String.class))
             .logLevel(Logger.Level.FULL)
-            .target(IGradeStudentClient.class, "http://localhost:8083/grades");
+            .target(IGradeStudentClient.class, "http://localhost:8083/gradeStudent");
 
-    /*
-    private IStudentClient iStudentClient = Feign.builder()
-            .client(new OkHttpClient())
-            .encoder(new GsonEncoder())
-            .decoder(new GsonDecoder())
-            .logger(new Slf4jLogger(String.class))
-            .logLevel(Logger.Level.FULL)
-            .target(IStudentClient.class, "http://localhost:8082/students");*/
-
-    public GradeStudentDTO getGradeStudent(Integer Id){
-        log.info("Call to the student client - getOneById : " + Id);
-
-        //Student student = iStudentClient.getOneById(Id);
-
-        log.info("Call to the grade client - getAll");
-        List<Grade> gradeStudents = iGradeStudentClient.getAll();
-
-        //return new GradeStudentDTO(student, gradeStudents);
-        return new GradeStudentDTO(null, gradeStudents);
-
+    public List<GradeStudentDTO> getAll(){
+        return iGradeStudentClient.getAll();
     }
+
+    public GradeStudentDTO getOneGradeStudentById(Integer id){
+        return iGradeStudentClient.getOneById(id);
+    }
+
+
 }

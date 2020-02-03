@@ -6,6 +6,7 @@ import feign.Param;
 import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -21,7 +22,10 @@ public interface IStudentClient {
     @RequestLine("GET /{id}")
     Student getOneById(@Param("id") Integer id);
 
+    @RequestLine("DELETE /{id}")
+    Student deleteOneById(@Param("id") Integer id);
+/*
     @RequestMapping("PUT /{id}")
-    Student updateGradeId(@Param("id")Integer id, @RequestParam("gradeId") Integer gradeId);
-
+    Student updateGradeId(@Param("id")Integer id, @RequestBody Integer gradeId);
+*/
 }

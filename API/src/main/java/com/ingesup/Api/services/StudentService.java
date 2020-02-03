@@ -29,8 +29,13 @@ public class StudentService {
     public List<Student> getAll(){
         return iStudentClient.getAll();
     }
+
     public Student getOneById(int id){
         return iStudentClient.getOneById(id);
+    }
+
+    public Student deleteOneById(int id){
+        return iStudentClient.deleteOneById(id);
     }
 /*
     public Student createOne(Student toCreate){
@@ -38,10 +43,10 @@ public class StudentService {
     }
 */
 /*
-    public int updateGradeId(int studentId, int gradeId){
+    public Student updateGradeId(int studentId, int gradeId){
         return iStudentClient.updateGradeId(studentId, gradeId);
-    }
-
+    }*/
+/*
     public int updateLastName(int studentId, String lastName){
         return studentRepository.updateLastName(studentId, lastName);
     }

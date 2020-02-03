@@ -12,14 +12,14 @@ import java.util.List;
 
 public interface GradeRepository extends CrudRepository<Grade, Integer> {
 
-    @Transactional // pour eviter corruption et executer asap
-    @Modifying(clearAutomatically = true) // pour eviter corruption
+    @Transactional
+    @Modifying(clearAutomatically = true)
     @Query("UPDATE Grade g SET g.headTeacher = :headTeacher WHERE g.id = :gradeId")
     int updateHeadTeacher ( @Param("gradeId") int gradeId, @Param("headTeacher") String headTeacher);
 
 
-    @Transactional // pour eviter corruption et executer asap
-    @Modifying(clearAutomatically = true) // pour eviter corruption
+    @Transactional
+    @Modifying(clearAutomatically = true)
     @Query(value = "SELECT * FROM Grade where id = :id",
             nativeQuery = true)
     List<Grade> getAllByUserId(@Param("id") int userId);

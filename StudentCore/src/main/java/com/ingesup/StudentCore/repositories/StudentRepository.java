@@ -12,8 +12,8 @@ import java.util.List;
 
 public interface StudentRepository extends CrudRepository<Student, Integer> {
 
-    @Transactional // pour eviter corruption et executer asap
-    @Modifying(clearAutomatically = true) // pour eviter corruption
+    @Transactional
+    @Modifying(clearAutomatically = true)
     @Query("UPDATE Student SET gradeId = :gradeId WHERE id = :studentId")
     int updateGradeId(@Param("studentId") int studentId, @Param("gradeId") int gradeId);
 
