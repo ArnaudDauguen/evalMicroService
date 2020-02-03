@@ -8,9 +8,12 @@ import feign.gson.GsonDecoder;
 import feign.gson.GsonEncoder;
 import feign.okhttp.OkHttpClient;
 import feign.slf4j.Slf4jLogger;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
+
+@Slf4j
 public class StudentService {
 
     private IStudentClient iStudentClient = Feign.builder()
@@ -23,8 +26,10 @@ public class StudentService {
 
 
     public List<Student> getAll(){
+        System.out.println("booo");
+        log.info("booo");
         List<Student> lst = iStudentClient.getAll();
-        System.out.println(lst.toString());
+        log.info(lst.toString());
         return lst;
     }
 

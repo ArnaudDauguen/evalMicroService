@@ -12,6 +12,9 @@ import java.util.List;
 @FeignClient(name="StudentClient")
 public interface IStudentClient {
 
+    @RequestLine("GET /")
+    List<Student> getAll();
+
     @RequestLine("GET /{id}")
     Student getOneById(@Param("id") Integer id);
 

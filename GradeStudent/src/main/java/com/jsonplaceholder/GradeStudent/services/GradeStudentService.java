@@ -5,7 +5,6 @@ import com.jsonplaceholder.GradeStudent.clients.IStudentClient;
 import com.jsonplaceholder.GradeStudent.entities.Grade;
 import com.jsonplaceholder.GradeStudent.entities.Student;
 import com.jsonplaceholder.GradeStudent.entities.GradeStudentDTO;
-import com.jsonplaceholder.GradeStudent.entities.StudentsGradeDTO;
 import feign.Feign;
 import feign.Logger;
 import feign.gson.GsonDecoder;

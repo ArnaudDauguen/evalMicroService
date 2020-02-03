@@ -1,9 +1,7 @@
 package com.jsonplaceholder.GradeStudent.controllers;
 
 import com.jsonplaceholder.GradeStudent.entities.GradeStudentDTO;
-import com.jsonplaceholder.GradeStudent.entities.StudentsGradeDTO;
 import com.jsonplaceholder.GradeStudent.services.GradeStudentService;
-import feign.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,8 +22,9 @@ public class GradeStudentController {
         return new ResponseEntity<>(gradeStudentService.getStudentsGrade(gradeId), HttpStatus.OK);
     }
 
-    @RequestMapping("/gradeStudent/")
+    @RequestMapping("/gradeStudent")
     ResponseEntity<List<GradeStudentDTO>> getStudentsByGradeId() {
         return new ResponseEntity<>(gradeStudentService.getAllStudentsByGrades(), HttpStatus.OK);
     }
+
 }

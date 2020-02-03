@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/controllers/GradeStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/controllers/GradeStudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/services/GradeStudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GradeStudent/src/main/java/com/jsonplaceholder/GradeStudent/services/GradeStudentService.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +53,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GradeCore" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
@@ -63,6 +64,18 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ingesup.TodoCore.exceptions" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Gradle.TodoCore [bootRun]">
     <configuration name="StudentCore [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -134,18 +147,6 @@
         <item itemvalue="Gradle.StudentCore [init]" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
