@@ -9,7 +9,7 @@ import java.util.List;
 
 @Component
 @FeignClient(name= "GradeClient")
-public interface IGradeStudent {
+public interface IGradeStudentClient {
 
     @RequestLine("GET /")
     List<Grade> getAll();

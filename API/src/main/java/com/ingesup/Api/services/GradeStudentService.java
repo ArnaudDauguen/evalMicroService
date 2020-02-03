@@ -1,6 +1,6 @@
 package com.ingesup.Api.services;
 
-import com.ingesup.Api.clients.IGradeStudent;
+import com.ingesup.Api.clients.IGradeStudentClient;
 import com.ingesup.Api.entities.Grade;
 import com.ingesup.Api.entities.GradeStudentDTO;
 import feign.Feign;
@@ -20,13 +20,13 @@ import java.util.List;
 @Data
 public class GradeStudentService {
 
-    private IGradeStudent iGradeStudent = Feign.builder()
+    private IGradeStudentClient iGradeStudentClient = Feign.builder()
             .client(new OkHttpClient())
             .encoder(new GsonEncoder())
             .decoder(new GsonDecoder())
             .logger(new Slf4jLogger(String.class))
             .logLevel(Logger.Level.FULL)
-            .target(IGradeStudent.class, "http://localhost:8083/grades");
+            .target(IGradeStudentClient.class, "http://localhost:8083/grades");
 
     /*
     private IStudentClient iStudentClient = Feign.builder()
@@ -43,7 +43,7 @@ public class GradeStudentService {
         //Student student = iStudentClient.getOneById(Id);
 
         log.info("Call to the grade client - getAll");
-        List<Grade> gradeStudents = iGradeStudent.getAll();
+        List<Grade> gradeStudents = iGradeStudentClient.getAll();
 
         //return new GradeStudentDTO(student, gradeStudents);
         return new GradeStudentDTO(null, gradeStudents);
